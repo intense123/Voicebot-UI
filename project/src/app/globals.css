@@ -1,0 +1,63 @@
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
+  .container {
+    overflow: hidden;
+    background: radial-gradient(circle, #3b0e68 0%, #1a084e 100%);
+  }
+  
+  .mic {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+  }
+  
+  .mic::before,
+  .mic::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+    z-index: 2;
+    box-shadow: 0 0 20px 20px #1c084f;
+  }
+  
+  .mic::before {
+    width: 300px;
+    height: 300px;
+    background-color: #1a084e;
+  }
+  
+  .mic::after {
+    width: 250px;
+    height: 150px;
+    background-color: #2f1e5f;
+    animation: circle-size 0.8s linear infinite alternate;
+  }
+  
+  .micIcon {
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(4);
+    display: block;
+    width: 15px;
+    height: 12px;
+    border-bottom-left-radius: 120px;
+    border-bottom-right-radius: 120px;
+    border: 2px solid;
+    border-top: 0;
+    margin-top: 20px;
+    z-index: 3;
+  }
+  
+  /* Add other styles as needed */
+  
+  
+  
